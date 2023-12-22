@@ -4,7 +4,7 @@ import Button from "./Button";
 
 const CardDeal = () => (
   <section className={layout.section}>
-    <div className={layout.sectionInfo}>
+    <div className={`${layout.sectionInfo}`}>
       <h2 className={styles.heading2}>
         Find a better card deal <br className="sm:block hidden" /> in few easy
         steps.
@@ -17,7 +17,12 @@ const CardDeal = () => (
     </div>
 
     <div className={layout.sectionImg}>
-      <img src={card} alt="card" className="w-[100%] h-[100%]" />
+      <img
+        src={card}
+        alt="card"
+        className="w-[100%] h-[100%] 
+       hover:rotate-12 duration-1000"
+      />
     </div>
   </section>
 );
